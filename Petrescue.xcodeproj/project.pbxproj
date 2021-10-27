@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24D7483158AEBC4D90C257ED /* Pods_Petrescue.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94966E90A45FC1BF684BF6E1 /* Pods_Petrescue.framework */; };
 		849FABCD272804CA0006CC03 /* PetrescueApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FABCC272804CA0006CC03 /* PetrescueApp.swift */; };
 		849FABCF272804CA0006CC03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 849FABCE272804CA0006CC03 /* ContentView.swift */; };
 		849FABD1272804CD0006CC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 849FABD0272804CD0006CC03 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5D1C6D09639554CBD3093BA8 /* Pods-Petrescue.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petrescue.debug.xcconfig"; path = "Target Support Files/Pods-Petrescue/Pods-Petrescue.debug.xcconfig"; sourceTree = "<group>"; };
 		849FABC9272804CA0006CC03 /* Petrescue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petrescue.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		849FABCC272804CA0006CC03 /* PetrescueApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetrescueApp.swift; sourceTree = "<group>"; };
 		849FABCE272804CA0006CC03 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -23,6 +25,8 @@
 		849FABD3272804CD0006CC03 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		849FABDB272807030006CC03 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		849FABDD2728070E0006CC03 /* ShowPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowPage.swift; sourceTree = "<group>"; };
+		94966E90A45FC1BF684BF6E1 /* Pods_Petrescue.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Petrescue.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9724E4ADE07DFBFDBCFC008 /* Pods-Petrescue.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Petrescue.release.xcconfig"; path = "Target Support Files/Pods-Petrescue/Pods-Petrescue.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,17 +34,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D7483158AEBC4D90C257ED /* Pods_Petrescue.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68AD3547FB565EECC83F84F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94966E90A45FC1BF684BF6E1 /* Pods_Petrescue.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		849FABC0272804CA0006CC03 = {
 			isa = PBXGroup;
 			children = (
 				849FABCB272804CA0006CC03 /* Petrescue */,
 				849FABCA272804CA0006CC03 /* Products */,
+				AFC32D76A6FCC5DDA0DF1E61 /* Pods */,
+				68AD3547FB565EECC83F84F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +96,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		AFC32D76A6FCC5DDA0DF1E61 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D1C6D09639554CBD3093BA8 /* Pods-Petrescue.debug.xcconfig */,
+				A9724E4ADE07DFBFDBCFC008 /* Pods-Petrescue.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 849FABD7272804CD0006CC03 /* Build configuration list for PBXNativeTarget "Petrescue" */;
 			buildPhases = (
+				280A5344A5B0F6C46957C32B /* [CP] Check Pods Manifest.lock */,
 				849FABC5272804CA0006CC03 /* Sources */,
 				849FABC6272804CA0006CC03 /* Frameworks */,
 				849FABC7272804CA0006CC03 /* Resources */,
+				50D37B8048B6C9D7D1C1C471 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -117,7 +144,7 @@
 				};
 			};
 			buildConfigurationList = 849FABC4272804CA0006CC03 /* Build configuration list for PBXProject "Petrescue" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -145,6 +172,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		280A5344A5B0F6C46957C32B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Petrescue-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50D37B8048B6C9D7D1C1C471 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Petrescue/Pods-Petrescue-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Petrescue/Pods-Petrescue-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Petrescue/Pods-Petrescue-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		849FABC5272804CA0006CC03 /* Sources */ = {
@@ -279,6 +348,7 @@
 		};
 		849FABD8272804CD0006CC03 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D1C6D09639554CBD3093BA8 /* Pods-Petrescue.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -293,7 +363,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -309,6 +379,7 @@
 		};
 		849FABD9272804CD0006CC03 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9724E4ADE07DFBFDBCFC008 /* Pods-Petrescue.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,7 +394,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
